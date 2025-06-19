@@ -1,0 +1,24 @@
+{
+    "name": "test-solana-signer-sdk",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "commonjs",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@neonevm/solana-sign": "^0.2.1",
+        "@solana/spl-token": "^0.4.13",
+        "@solana/web3.js": "^1.98.2",
+        "bs58": "^5.0.0",
+        "dotenv": "^16.5.0",
+        "ethers": "^6.12.1"
+    },
+    "devDependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+        "hardhat": "^2.24.2"
+    }
+}
