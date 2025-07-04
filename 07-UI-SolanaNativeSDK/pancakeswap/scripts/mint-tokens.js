@@ -23,7 +23,7 @@ async function main() {
   const contractV1 = 'contracts/erc20-for-spl/ERC20ForSPL.sol:ERC20ForSplMintable';
   const contractV2 = 'contracts/erc20-for-spl-v2/token/ERC20ForSpl/erc20_for_spl.sol:ERC20ForSplMintable';
 
-  await createPoolDeposit(connection, 2);
+  await createPoolDeposit(connection, 1);
 
   const deployer = (await ethers.getSigners())[0];
   await deployerAirdrop(deployer, 10000);

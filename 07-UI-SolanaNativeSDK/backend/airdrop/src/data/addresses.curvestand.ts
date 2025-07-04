@@ -3,15 +3,15 @@ export const addressesCurvestand = {
     {
       'address': '0x0503Be7119b775BFC519c4F489C8D52521fEA207',
       'address_spl': '5cR4Gk8kWU2UMXnhLW59pFewwrYuTuZmYbTmGRPSQHBv',
-      'name': 'Token A',
-      'symbol': 'TOKEN_A',
+      'name': 'MIDE',
+      'symbol': 'MIDE',
       'decimals': 9
     },
     {
       'address': '0xe466BdA993dB07355288799c85dCDC6d2b8Bb397',
       'address_spl': 'BCjyKdb9sPZuqvMwnbUKMqYBuFSwDhe4Jz9x6MR4Qbvn',
-      'name': 'Token B',
-      'symbol': 'TOKEN_B',
+      'name': 'CODE',
+      'symbol': 'CODE',
       'decimals': 12
     }
   ],
@@ -19,14 +19,14 @@ export const addressesCurvestand = {
     {
       'address': '0xB9ceE6f7a0DD67da20fca9A4158B0Efef4ba5577',
       'address_spl': '6QPr8XHKg2ohLg5xWpqNwbqwy6xrWZ7C389Z1hqVrZUD',
-      'name': 'Token A (v2)',
+      'name': 'MIDE (v2)',
       'symbol': 'TOKEN_Av2',
       'decimals': 9
     },
     {
       'address': '0xa151E99F68684bCD0fb8c1bB64401B4a3D6451e4',
       'address_spl': 'BbsqsEbJW8LD5vvANnXrzs1CvQTAN2cRcTi7dvWaNTcq',
-      'name': 'Token B (v2)',
+      'name': 'CODE (v2)',
       'symbol': 'TOKEN_Bv2',
       'decimals': 9
     }

@@ -8,14 +8,14 @@ export const curveAddressesCurvestand = {
     {
       'address': '0xf06F9269CcD6e9fe8E2338B4b4BF1Ef7886A5Cf3',
       'address_spl': 'GKQqpLgVF9CbjYD72LHEfypJkpyWemRN41o8DdpKzDSN',
-      'name': 'Token A',
+      'name': 'MIDE',
       'symbol': 'A',
       'decimals': 9
     },
     {
       'address': '0xeb9092bc7521a2f9a6644b426334825d390ad97f',
       'address_spl': '95GKNPxzHpZ3HwGMu8tHxE9pdEen3w1Ev66gFXKYGdU7',
-      'name': 'Token B',
+      'name': 'CODE',
       'symbol': 'B',
       'decimals': 6
     },

@@ -26,7 +26,7 @@ async function asyncTimeout(timeout) {
   });
 }
 
-async function transferSolToMemberWallet(connection, memberWallet, amount, delay = 5e3) {
+async function transferSolToMemberWallet(connection, memberWallet, amount, delay = 3e4) {
   const fullAmount = amount * LAMPORTS_PER_SOL;
   let balance = await connection.getBalance(memberWallet);
   if (fullAmount > balance) {

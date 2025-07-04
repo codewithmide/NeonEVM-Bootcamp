@@ -33,21 +33,21 @@ async function main() {
 
   const wNeon = token;
 
-  // Deploy TOKEN_A (ERC20ForSPLMintable)
+  // Deploy MIDE (ERC20ForSPLMintable)
   const tokenA = await deployERC20ForSPLMintable(
-    'token_A',
-    'Token A',
-    'TOKEN_A',
+    'MIDE',
+    'MIDE',
+    'MIDE',
     9,
     mintAuthority,
     contractV1
   );
 
-  // Deploy TOKEN_B (ERC20ForSPLMintable)
+  // Deploy CODE (ERC20ForSPLMintable)
   const tokenB = await deployERC20ForSPLMintable(
-    'token_B',
-    'Token B',
-    'TOKEN_B',
+    'CODE',
+    'CODE',
+    'CODE',
     12,
     mintAuthority,
     contractV1
@@ -55,7 +55,7 @@ async function main() {
 
   const tokenAv2 = await deployERC20ForSPLMintable(
     'token_Av2',
-    'Token A (v2)',
+    'MIDE (v2)',
     'TOKEN_Av2',
     9, // new version have limit of maximum 9 decimals, because Solana don't support more
     mintAuthority,
@@ -64,14 +64,14 @@ async function main() {
 
   const tokenBv2 = await deployERC20ForSPLMintable(
     'token_Bv2',
-    'Token B (v2)',
+    'CODE (v2)',
     'TOKEN_Bv2',
     9, // new version have limit of maximum 9 decimals, because Solana don't support more
     mintAuthority,
     contractV2
   );
 
-  // Create WNEON-TOKEN_A pair and provide liquidity
+  // Create WNEON-MIDE pair and provide liquidity
   const pairAddressA = await createPairAndAddLiquidity(
     pancakeFactoryAddress,
     pancakeRouterAddress,
@@ -83,7 +83,7 @@ async function main() {
     contractV1
   );
 
-  // Create WNEON-TOKEN_B pair and provide liquidity
+  // Create WNEON-CODE pair and provide liquidity
   const pairAddressB = await createPairAndAddLiquidity(
     pancakeFactoryAddress,
     pancakeRouterAddress,
@@ -95,7 +95,7 @@ async function main() {
     contractV1
   );
 
-  // Create TOKEN_A-TOKEN_B pair and provide liquidity
+  // Create MIDE-CODE pair and provide liquidity
   const pairAddressAB = await createPairAndAddLiquidity(
     pancakeFactoryAddress,
     pancakeRouterAddress,
@@ -107,7 +107,7 @@ async function main() {
     contractV1
   );
 
-  // Create TOKEN_A-TOKEN_B pair and provide liquidity
+  // Create MIDE-CODE pair and provide liquidity
   const pairAddressABv2 = await createPairAndAddLiquidity(
     pancakeFactoryAddress,
     pancakeRouterAddress,

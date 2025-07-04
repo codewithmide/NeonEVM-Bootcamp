@@ -14,12 +14,12 @@ module.exports = {
     neondevnet: '',
     neonmainnet: ''
   },
-  token_A: {
+  MIDE: {
     curvestand: '',
     neondevnet: '',
     neonmainnet: ''
   },
-  token_B: {
+  CODE: {
     curvestand: '',
     neondevnet: '',
     neonmainnet: ''

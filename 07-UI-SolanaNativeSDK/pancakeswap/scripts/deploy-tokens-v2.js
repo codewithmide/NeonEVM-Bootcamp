@@ -21,7 +21,7 @@ async function main() {
 
   const tokenAv2 = await deployERC20ForSPLMintable(
     'token_Av2',
-    'Token A (v2)',
+    'MIDE (v2)',
     'TOKEN_Av2',
     9, // new version have limit of maximum 9 decimals, because Solana don't support more
     mintAuthority,
@@ -30,7 +30,7 @@ async function main() {
 
   const tokenBv2 = await deployERC20ForSPLMintable(
     'token_Bv2',
-    'Token B (v2)',
+    'CODE (v2)',
     'TOKEN_Bv2',
     9, // new version have limit of maximum 9 decimals, because Solana don't support more
     mintAuthority,
@@ -40,7 +40,7 @@ async function main() {
   const pancakeFactoryAddress = addresses.swap.factory;
   const pancakeRouterAddress = addresses.swap.router;
 
-  // Create TOKEN_A-TOKEN_B pair and provide liquidity
+  // Create MIDE-CODE pair and provide liquidity
   const pairAddressAB = await createPairAndAddLiquidity(
     pancakeFactoryAddress,
     pancakeRouterAddress,

@@ -18,17 +18,17 @@ async function main() {
   const mintAuthority = deployer.address; // Set deployer as mint authority
 
   await deployERC20ForSPLMintable(
-    'token_A',
-    'Token A',
-    'TOKEN_A',
+    'mide',
+    'Mide',
+    'MIDE',
     9,
     mintAuthority
   );
 
   await deployERC20ForSPLMintable(
-    'token_B',
-    'Token B',
-    'TOKEN_B',
+    'code',
+    'Code',
+    'CODE',
     12,
     mintAuthority
   );

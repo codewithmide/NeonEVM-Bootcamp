@@ -19,7 +19,7 @@ async function main() {
     console.log('\nPancakeRouter contract address:' + config.pancakeRouter[network.name]);
 
     let tokenAKey = 'WNEON';
-    let tokenBKey = 'token_A';
+    let tokenBKey = 'mide';
     if (config[tokenAKey][network.name] && config[tokenBKey][network.name]) {
       await createPairAndAddLiquidity(
         config.pancakeFactory[network.name],
@@ -27,14 +27,14 @@ async function main() {
         deployer,
         config[tokenAKey][network.name],
         config[tokenBKey][network.name],
-        1000,
-        10000
+        50000,
+        40000
       );
     } else {
       console.log('\nMissing ' + tokenAKey + ' and/or ' + tokenBKey + ' address(es) in config file');
     }
-    tokenAKey = 'token_A';
-    tokenBKey = 'token_B';
+    tokenAKey = 'mide';
+    tokenBKey = 'code';
     if (config[tokenAKey][network.name] && config[tokenBKey][network.name]) {
       await createPairAndAddLiquidity(
         config.pancakeFactory[network.name],
@@ -42,8 +42,8 @@ async function main() {
         deployer,
         config[tokenAKey][network.name],
         config[tokenBKey][network.name],
-        5000,
-        20000
+        50000,
+        40000
       );
     } else {
       console.log('\nMissing ' + tokenAKey + ' and/or ' + tokenBKey + ' address(es) in config file');
